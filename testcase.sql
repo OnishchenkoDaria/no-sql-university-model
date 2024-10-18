@@ -14,6 +14,9 @@ CALL RenewStudent(4, 1, 2023);
 CALL SoftDeleteStudent(1, 'admin1');
 SELECT * FROM active_students;
 
+-- check trigger
+SELECT * FROM university.student_log;
+
 -- check homework and return feedback
 SELECT * FROM homework_feedback;
 CALL ResetHomeworkAndFeedback(2);
